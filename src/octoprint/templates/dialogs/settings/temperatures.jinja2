@@ -57,4 +57,19 @@
             <a title="Add Profile" class="btn btn-primary" data-bind="click: addTemperatureProfile"><i class="fa fa-plus"></i></a>
         </div>
     </div>
+    <h3>{{ _('Maximums') }}</h3>
+    <div class="control-group">
+        <label class="control-label" for="settings-maxExtruder">{{ _('Extruder') }}</label>
+        <div class="input-append">
+            <input type="number" min="0" step="1" class="input-mini text-right" data-bind="value: max_extruder" id="settings-maxExtruder">
+            <span class="add-on">&deg;C</span>
+        </div>
+    </div>
+    <div class="control-group">
+        <label class="control-label" for="settings-maxBed">{{ _('Bed') }}</label>
+        <div class="input-append">
+            <input type="number" min="0" step="1" class="input-mini text-right" data-bind="value: max_bed" id="settings-maxBed">
+            <span class="add-on">&deg;C</span>
+        </div>
+    </div>
 </form>
